@@ -1,0 +1,26 @@
+Language Model Usage Report
+
+1. The used LLM tool:
+   The LLM tool used was GitHub Copilot.
+
+2. Motivation/reason to use LLM:
+   The primary motivation for using the LLM was to ensure adherence to good coding practices, improve code quality, and streamline the development process. 
+   Additionally, the LLM was used to assist in learning a new programming language (Go) and to replicate an existing service written in Python.
+
+3. How and why LLM helped:
+   - In Service 1 and Service 2:
+     - The LLM was used to review the code for good coding practices.
+     - It assisted in writing comments and function documentation, ensuring clarity and maintainability of the code.
+   - In Service 3:
+     - The LLM was instrumental in learning Go and replicating the functionality of the Python-based service in Go.
+     - It helped identify and fix errors, such as spelling mistakes and incorrect URLs, during the development process.
+
+4. What kind of mistakes LLM did:
+   - The LLM occasionally suggested code that was syntactically correct but did not align with the specific requirements of the project.
+   - Some recommendations lacked context-specific understanding, leading to suggestions that were not entirely relevant or optimal.
+
+5. What were things that LLM was not able to provide:
+   - It was unable to provide comprehensive explanations for certain Go-specific concepts, requiring additional research and learning from external resources.
+   - Debugging complex runtime issues or providing insights into performance optimization was beyond its capabilities.
+
+In short i think the LLM proved to be a valuable tool for improving productivity and learning, but its suggestions required careful review and validation to ensure correctness and alignment with project goals.
