@@ -92,5 +92,5 @@ rm -rf ./vstorage && touch ./vstorage && chmod 666 ./vstorage
 Remove the named volume for Storage:
 
 ```bash
-docker volume rm devops_storageVolume
+docker volume rm devops-course_storageVolume
 ```
