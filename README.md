@@ -10,6 +10,8 @@ This repository contains a simple system with three services, implemented in **d
 
 ## System Architecture
 
+![SystemArchitecture](./Architecture.png)
+
 - **Service1** – Node.js (Express)
 
   - The **only service accessible from outside**.
@@ -53,39 +55,42 @@ This repository contains a simple system with three services, implemented in **d
    ```bash
    git clone -b exercise1 https://github.com/Rohanjai/DevOps-Course.git
    ```
-2. Navigate to the project directory:  
+2. Navigate to the project directory:
    ```bash
    cd DevOps-Course
    ```
-3. Build and start the services:  
+3. Build and start the services:
    ```bash
    docker-compose up --build -d
    ```
 4. Wait ~10 seconds for the services to initialize.
-5. Test the status flow:  
+5. Test the status flow:
    ```bash
    curl localhost:8199/status
    ```
-6. Fetch the first storage log:  
+6. Fetch the first storage log:
    ```bash
    curl localhost:8199/log
    ```
-7. Fetch the second storage log:  
+7. Fetch the second storage log:
    ```bash
    cat ./vstorage
    ```
-8. Stop the services:  
+8. Stop the services:
    ```bash
    docker-compose down
    ```
 
 ### Cleanup Instructions
 
-Clean the logs from host-file storage:  
-  ```bash
-  rm -rf ./vstorage && touch ./vstorage && chmod 666 ./vstorage
-  ```
-Remove the named volume for Storage:  
-  ```bash
-  docker volume rm devops_storageVolume
-  ```
+Clean the logs from host-file storage:
+
+```bash
+rm -rf ./vstorage && touch ./vstorage && chmod 666 ./vstorage
+```
+
+Remove the named volume for Storage:
+
+```bash
+docker volume rm devops_storageVolume
+```
