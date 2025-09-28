@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  service1:
+    build: ./Service1
+    volumes:
+      - ./vstorage:/vStorage
+    ports:
+      - "8199:8080"
+    networks:
+      - my_network
+    depends_on:
+      - service2
+      - storage
+
+  service2:
+    build: ./Service2
+    volumes:
+      - ./vstorage:/vStorage
+    networks:
+      - my_network
+    depends_on:
+      - storage
+
+  storage:
+    build: ./Storage
+    volumes:
+      - storageVolume:/storage
+    networks:
+      - my_network
+
+volumes:
+  storageVolume:
+
+networks:
+  my_network:
+    driver: bridge
