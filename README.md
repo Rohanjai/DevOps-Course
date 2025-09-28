@@ -81,7 +81,11 @@ This repository contains a simple system with three services, implemented in **d
 
 ### Cleanup Instructions
 
-- Clean the logs from host-file storage:  
-  `> ./vstorage`
-- Remove the named volume for Storage:  
-  `docker volume rm devops_storageVolume`
+Clean the logs from host-file storage:  
+  ```bash
+  rm -rf ./vstorage && touch ./vstorage && chmod 666 ./vstorage
+  ```
+Remove the named volume for Storage:  
+  ```bash
+  docker volume rm devops_storageVolume
+  ```
