@@ -6,6 +6,7 @@ Language Model Usage Report
 2. Motivation/reason to use LLM:
    The primary motivation for using the LLM was to ensure adherence to good coding practices, improve code quality, and streamline the development process. 
    Additionally, the LLM was used to assist in learning a new programming language (Go) and to replicate an existing service written in Python.
+   LLM also helped in writing comments and documentation for better code maintainability. It is also gave me an idea on report writing.
 
 3. How and why LLM helped:
    - In Service 1 and Service 2:
